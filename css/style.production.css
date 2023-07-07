@@ -203,6 +203,13 @@ td {
   width: 25rem;
 }
 
+.text-highlight {
+  color: rgb(255 241 245);
+  background-color: rgb(158 0 82);
+  padding: 0 0.4rem;
+  border-radius: 5px;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

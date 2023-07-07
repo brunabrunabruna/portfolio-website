@@ -7,7 +7,6 @@
   --active-color: rgb(0 157 255);
 
   --highlight-color: rgba(255, 192, 203, 0.418);
-
   --highlight-shadow: rgba(173, 121, 129, 0.2);
 
   --primary-button-bg-color: palevioletred;
@@ -181,6 +180,13 @@ td {
   align-items: center;
   justify-content: center;
   width: 25rem;
+}
+
+.text-highlight {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  padding: 0 0.4rem;
+  border-radius: 5px;
 }
 
 .footer {
