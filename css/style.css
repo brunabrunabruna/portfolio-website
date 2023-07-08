@@ -214,6 +214,7 @@ td {
 
 .social-media a {
   margin-right: 10px;
+  display: flex;
 }
 
 .social-media a:last-child {
