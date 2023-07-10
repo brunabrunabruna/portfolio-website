@@ -1,9 +1,4 @@
-/* stylelint-disable at-rule-no-vendor-prefix */
-/* stylelint-disable property-no-vendor-prefix */
-/* stylelint-disable value-no-vendor-prefix */
-
 /*
-
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
@@ -250,7 +245,6 @@ td {
   align-items: center;
   -webkit-box-shadow: 5px 5px 5px 1px rgb(173 121 129 / 0.2);
   box-shadow: 5px 5px 5px 1px rgb(173 121 129 / 0.2);
-  margin-bottom: 2rem;
 }
 
 .social-media a {
@@ -592,10 +586,6 @@ svg * {
   .about-section > p {
     width: 15rem;
     margin: 2rem 1rem 1rem 0;
-  }
-
-  .social-media {
-    margin-bottom: 3rem;
   }
 
   .form-section {
