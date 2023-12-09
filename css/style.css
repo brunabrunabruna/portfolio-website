@@ -7,9 +7,9 @@
   --active-color: rgb(0 157 255);
   --highlight-color: rgb(255 192 203 / 0.418);
   --highlight-shadow: rgb(173 121 129 / 0.2);
-  --primary-button-bg-color: palevioletred;
+  --primary-button-bg-color: rgb(253 161 192);
   --primary-button-text-color: white;
-  --primary-button-bg-hover: rgb(253 161 192);
+  --primary-button-bg-hover: palevioletred;
   --primary-button-bg-active: rgb(125 8 47);
   --secondary-color: rgb(112 168 216);
   --secondary-color-hover: rgb(175 216 252);
@@ -27,14 +27,14 @@
 body {
   background-color: var(--bg-color);
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-color);
   font-size: var(--font-medium);
 }
 
 nav {
   font-family: "Roboto Mono", monospace;
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
 }
 
 a {
@@ -65,8 +65,8 @@ button {
   border-radius: 10px;
   border: none;
   font-family: inherit;
-  border-bottom: 2px solid rgb(0 0 0 / 0.3);
-  border-right: 2px solid rgb(0 0 0 / 0.3);
+  /* border-bottom: 2px solid rgb(0 0 0 / 0.3); */
+  /* border-right: 2px solid rgb(0 0 0 / 0.3); */
 }
 
 button:hover {
@@ -85,11 +85,11 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
 }
 
 p {
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
   line-height: 1.5;
 }
 
@@ -135,11 +135,6 @@ td {
 .headline {
   align-self: center;
   text-align: center;
-}
-
-.work-section {
-  display: flex;
-  flex-direction: column;
 }
 
 .secondary-button {
@@ -226,35 +221,54 @@ td {
   padding: 50px;
   justify-content: center;
 }
+.work-wrapper {
+}
+
+.work-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-flow: row; */
+  flex-direction: row;
+  padding: 2rem;
+}
 
 .grid-item {
+  display: flex;
+  flex-direction: row;
   background-color: var(--highlight-color);
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px 1px var(--highlight-shadow);
+  /* box-shadow: 5px 5px 10px 1px var(--highlight-shadow); */
+  width: 90%;
+  height: 600px;
+  margin: 30px;
+  max-width: 700px;
+}
+.text-container {
+  width: 50%;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text-container > button {
+  /* align-self: flex-end; */
+}
+.img-container {
+  align-self: center;
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.grid-item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+.img-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-.grid-item:nth-child(3) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
-.grid-item:nth-child(5) {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 3;
-}
-
 .back-to-top-link {
   padding-top: 50px;
 }
@@ -397,26 +411,11 @@ svg * {
     width: 30rem;
     margin-top: 3rem;
   }
-
-  .grid-item:last-child {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .grid-item:nth-child(3) {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .grid-item:nth-child(5) {
-    grid-column: auto;
-    grid-row: auto;
-  }
 }
 
 @media all and (width <= 800px) {
   h1 {
-    font-size: var(--font-large);
+    font-size: var(--font-medium);
   }
 
   .grid {
@@ -458,16 +457,22 @@ svg * {
     width: 20rem;
   }
 
-  /* .hamburger-menu {
-    position: absolute;
-    margin-top: 0;
+  .grid-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
-
-  .hamburger-menu img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-  } */
+  .work-section {
+    padding: 0%;
+  }
+  .text-container {
+    /* align-items: center; */
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+  .img-container {
+    width: 100%;
+  }
 }
 
 @media all and (width <= 650px) {
@@ -504,6 +509,6 @@ svg * {
     font-size: var(--font-small);
   }
   .grid-item h2 {
-    font-size: 2rem;
+    font-size: var(--font-medium);
   }
 }

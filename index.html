@@ -20,7 +20,7 @@
       type="image/x-icon"
     />
 
-    <link rel="stylesheet" href="./css/style.production.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>bruna's portfolio</title>
   </head>
@@ -40,13 +40,13 @@
             <a href="./index.html" role="menuitem">Home</a>
           </li>
           <li role="presentation">
-            <a href="./about.html" role="menuitem">About me</a>
+            <a href="#about" role="menuitem">About me</a>
           </li>
           <li role="presentation">
-            <a href="./work.html" role="menuitem">Work</a>
+            <a href="#work" role="menuitem">Work</a>
           </li>
           <li role="presentation">
-            <a href="./contact.html" role="menuitem">Contact</a>
+            <a href="#contact" role="menuitem">Contact</a>
           </li>
         </ul>
 
@@ -72,9 +72,200 @@
             based in Berlin ✧
           </p>
           <p>.・。.・゜✭・.・✫・゜・。.</p>
-          <a href="#">check some of my code</a>
+          <!-- <a href="#">check some of my code</a> -->
         </div>
       </article>
+
+<article>
+  <div id="about" class="about-section">
+    <!-- <h1>about me</h1> -->
+
+    <p>
+      hello, nice to meet you :) I'm Bruna. <br>
+      Originally from Brazil and now based in Berlin, Germany 
+      I am learning web development, and <a href="#work"> here you
+      can check out the projects I did so far!</a> <br />
+      <p>
+      in my free time I like to listen to music, make art and chill with friends
+      ☯︎</p>
+    </p>
+
+ 
+
+    <a href="./img/bruna-portrait.jpg" class="button" download >Download my CV</a>
+</div>
+  </article>
+  <section id="work" class="work-wrapper">
+    <h2 class="headline">My work:</h2>
+    <div class="work-section">
+      <div class="grid-item">
+        <div class="text-container">
+          <h2>Ghibli Archive Angular 📽</h2>
+          <p>
+            Written in Angular. Ghibli archive is a website about the most
+            iconic movies made by Studio Ghibli.
+          </p>
+          <div>
+            <button>
+              <a
+                target="_blank"
+                href="https://github.com/brunabrunabruna/movies-client-angular"
+                >Github</a
+              >
+            </button>
+            <button>
+              <a
+                target="_blank"
+                href="https://github.com/brunabrunabruna/movies-client-angular"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./img/project_angular_movies.png" alt="" />
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="text-container">
+          <h2>Chatroom 📱</h2>
+          <p>
+            Chat app for mobile devices, developed using React Native. Users
+            have a chat interface and options to share images and their
+            location.
+          </p>
+          <div>
+            <button>
+              <a
+                target="_blank"
+                href="https://github.com/brunabrunabruna/chat-app"
+                >Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./img/project_chatroom.jpg" alt="" />
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="text-container">
+          <h2>Ghibli Archive 🎬</h2>
+          <p>
+            Ghibli archive is a website about the most iconic movies made by
+            Studio Ghibli. Users can signup, discover more details about
+            Ghibli movies, and make a list of their favorite movies.
+          </p>
+          <div>
+            <button>
+              <a
+                target="_blank"
+                href="https://ghibli-archive.netlify.app/movies"
+                >Github</a
+              >
+            </button>
+            <button>
+              <a
+                target="_blank"
+                href="https://github.com/brunabrunabruna/movies-client"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./img/project_movies_frontend_react.png" alt="" />
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="text-container">
+          <h2>Ghibli Archive Server-side ⚙</h2>
+          <p>
+            Server-side component of "Ghibli Archive" web application. The
+            web application provides users with access to information about
+            different movies, directors, and genres. Users can sign up,
+            update their personal information, and create a list of their
+            favorite movies.
+          </p>
+          <div>
+            <button>
+              <a
+                target="_blank"
+                href="https://github.com/brunabrunabruna/movies-api/"
+                >Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./img/project_movies_frontend_react.png" alt="" />
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="text-container">
+          <h2>Pokedex 🎮</h2>
+          <p>
+            Web application that displays a list of Pokemons. You can click
+            on one to see more information like their hight, type and shiny
+            version!
+          </p>
+          <div>
+            <button>
+              <a
+                target="_blank"
+                href="https://github.com/brunabrunabruna/pokedex"
+                >Github</a
+              >
+            </button>
+            <button>
+              <a
+                target="_blank"
+                href="https://brunabrunabruna.github.io/pokedex/"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./img/project_pokedex.png" alt="" />
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="text-container">
+          <h2>Meet App 📍</h2>
+          <p>
+            Application allows users to login using their Google account,
+            and have access to a website to search for tech events on their
+            prefered city. Uses Google Calendar API to fetch upcoming
+            events.
+          </p>
+          <div>
+            <button>
+              <a
+                target="_blank"
+                href="https://github.com/brunabrunabruna/meet-app"
+                >Github</a
+              >
+            </button>
+            <button>
+              <a
+                target="_blank"
+                href="https://brunabrunabruna.github.io/meet-app/"
+                >Live Demo</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./img/project_meetapp.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="form-section">
+    <h2>send me a message:</h2>
+ <p>brunaandreis.v@gmail.com</p>
+  </section>
     </main>
     <footer class="footer">
       <p>find me at:</p>
