@@ -2,8 +2,8 @@
   --bg-color: rgb(255 241 245);
   --text-color: #000;
   --primary-color: rgb(158 0 82);
-  --visited-color: rgb(69 0 149);
-  --hover-color: rgb(226 9 121);
+  --visited-color: white;
+  --hover-color: white;
   --active-color: rgb(0 157 255);
   --highlight-color: rgb(255 192 203 / 0.418);
   --highlight-shadow: rgb(173 121 129 / 0.2);
@@ -40,9 +40,10 @@ nav {
 a {
   color: var(--primary-color);
   text-decoration: none;
-  transition-property: color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  /* transition-property: color; */
+  /* transition-duration: 0.5s; */
+  /* transition-timing-function: ease-in-out; */
+  /* a:visi */
 }
 
 a:visited {
@@ -123,8 +124,9 @@ td {
   align-items: center;
 }
 
-.navigation-list {
+.navigation-list ul > li > a {
   list-style-type: none;
+  color: var(--primary-color);
 }
 
 .navigation-list li {
@@ -310,15 +312,12 @@ td {
   padding: 1rem;
   border-radius: 10px;
   font-size: 1rem;
-  background-color: var(--highlight-color);
-  box-shadow: 5px 5px 5px 1px var(--highlight-shadow);
-  transition-property: background-color, transform;
-  transition-duration: 0.5s, 0.5s;
-  transition-timing-function: ease-in-out;
+  background-color: var(--primary-button-bg-color);
+  color: var(--primary-button-text-color);
 }
 
 .button:hover {
-  background-color: rgb(255 192 203 / 0.8);
+  background-color: var(--primary-button-bg-hover);
 }
 
 .svg-box {
