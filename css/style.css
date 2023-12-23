@@ -317,6 +317,16 @@ td {
   background-color: var(--primary-button-bg-hover);
 }
 
+.case-study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.case-study-img {
+  width: 90%;
+  height: auto;
+}
 .svg-box {
   width: 35rem;
 }
