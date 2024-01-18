@@ -526,7 +526,12 @@ svg * {
   .navigation-list li {
     font-size: var(--font-small);
   }
+
   .grid-item h2 {
     font-size: var(--font-medium);
+  }
+
+  .grid-item {
+    margin: 10px;
   }
 }
