@@ -243,8 +243,9 @@ td {
   border-radius: 10px;
   width: 90%;
   margin: 30px;
-  max-width: 700px;
+  width: 700px;
   overflow: hidden;
+  height: 900px;
 }
 .text-container {
   width: 50%;
