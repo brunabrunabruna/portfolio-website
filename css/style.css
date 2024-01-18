@@ -321,12 +321,13 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
+
 .case-study-img {
   width: 90%;
   height: auto;
 }
+
 .svg-box {
   width: 35rem;
 }
@@ -464,18 +465,28 @@ svg * {
   }
 
   .grid-item {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--highlight-color);
     padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    width: 700px;
+    overflow: hidden;
+    height: 900px;
   }
+
   .work-section {
     padding: 0%;
   }
+
   .text-container {
     /* align-items: center; */
     margin-bottom: 2rem;
     width: 90%;
   }
+
   .img-container {
     width: 100%;
   }
